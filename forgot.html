@@ -1,0 +1,94 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="expires" content="-1" />
+        <link rel="stylesheet" href="/css/forgot.css" />
+        <link rel="apple-touch-icon" href="img/logo-removebg-preview.png" />
+        <link rel="icon" href="img/logo-removebg-preview.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/logo-removebg-preview.png" type="image/x-icon">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+        <title>Internet Authentication System: โรงเรียนรัตนโกสินทร์สมโภชบางขุนเทียน</title>
+
+
+<!-- Java -->
+
+<!-- Java -->
+</head>
+
+<body>
+	<div class="hidden">
+	$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+
+<script language="JavaScript">
+<!--
+    function openLogin() {
+	if (window.name != 'hotspot_logout') return true;
+	open('$(link-login)', '_blank', '');
+	window.close();
+	return false;
+    }
+//-->
+</script>
+</div>
+
+	<div class="container">
+	<input type="hidden" name="dst" value="$(link-orig)" />
+	<input type="hidden" name="popup" value="true" />
+					<div class="logo"><a href="$(link-redirect)"><img src="img/logo-removebg-preview.png"></a></div>
+					<h1>บุคลากร และ นักเรียน <br>โรงเรียนรัตนโกสินทร์สมโภชบางขุนเทียน</h1>
+	        		<div class="term_all">
+	        		<li>ขอบัญชีใหม่ ของได้ที่ ห้องพักครูคอมพิวเตอร์ ชั้น 2 อาคาร 2 ชั้น โดยเตรียม ชื่อ นามสกุล และ เลขที่บัตรประชาชนเพื่อสร้างบัญชี</li> 
+	        		<li>ลืมรหัสผ่าน ติดต่อได้ที่ ห้องพักครูคอมพิวเตอร์ ชั้น 2 อาคาร 2 ชั้น หลังจากเปลี่ยนรหัสผ่านเรียบร้อยแล้ว สามารถเปลี่ยนเพิ่มเติมได้</li>
+	        		</div>
+	        		<form action="$(link-login)" name="login" onSubmit="return openLogin()">
+						<div class="submit">
+							<button type="submit" id="submit" class="btn">กลับ</button>
+						</div>
+					</form>
+	        	</div>
+			
+				<footer class="footer">
+					<marquee direction="left">
+						<p>งานพัฒนาระบบเครือข่ายคอมพิวเตอร์ 
+						โรงเรียนรัตนโกสินทร์สมโภช บางขุนเทียน (RST SCHOOL)
+						เลขที่ 2 ถนนพระรามที่ 2 ซอย 69 แสมดำ บางขุนเทียน กรุงเทพฯ 10150		
+						admin 02-415-3083 ต่อ 136 
+						อีเมล์ networks@rst.ac.th</p>
+					</marquee>
+				</footer>
+		
+
+ <script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+</body>
+
+
+</html>

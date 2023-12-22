@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto+Mono:ital,wght@0,100;1,400&family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Kanit', sans-serif ;
+}
+
+body {
+    background: url(/img/DSC02703.jpg) no-repeat ;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+
+}
+.hidden {
+    display: none;
+}
+.body{
+    width: 100%;
+    justify-content: center;
+}
+.form{
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 420px;
+    background: transparent;
+    border:  2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    padding: 25px 40px;
+    color: #fff;
+    justify-content: center;
+    margin: 10px auto ;
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
+}
+
+  @keyframes scale-up-center {
+    0% {
+              transform: scale(0.5);
+    }
+    100% {
+              transform: scale(1);
+    }
+  }
+
+.container .logo {
+    background-color: #fff;
+    width: 80%;
+    height: auto ;
+    margin: 0 auto 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.container img{
+    width: 100%;
+    height: auto;
+}
+
+.container h1{
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.container .term{
+    font-size: 14px;
+    margin: 5px 0 ;
+    text-align: center;
+    color: #fff;
+}
+
+.container .input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+
+}
+.input input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input label{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    padding: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 19px;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  input:focus{
+    border: 2px solid #fff;
+  }
+  input:focus ~ label,
+  input:valid ~ label{
+    top: 0;
+    left: 15px;
+    font-size: 16px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    background: #fff;
+    color: #333;
+ }
+
+
+.input i{
+    position: absolute;
+    right: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+}
+input:focus ~ i,
+input:valid ~ i{
+    color: #333;
+ }
+
+.input #lock{
+    cursor: pointer;
+}
+
+input:focus ~ i{
+    color: #fff;
+}
+
+.term_ag{
+    display: flex;
+    font-size: 14px;
+    margin: 10px 0 20px;
+    justify-content: center;
+    color: #fff; 
+}
+
+.term_ag a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 5px;
+    letter-spacing: 1px;
+}
+.term_ag a:hover{
+    text-decoration: underline;
+}
+
+
+.container  .btn{
+    width: 100%;
+    height: 45px;
+    margin: 0 0 15px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    border-bottom: 5px solid #858585;
+    transition: 0.1s;
+}
+
+.container .btn:hover{
+    border-bottom-width: 0;
+  transform: translateY(5px);   
+}
+
+
+.term_re{
+    font-size: 14px;
+    margin: 10px 5px 0 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.term_re a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.term_re a:hover{
+    text-decoration: underline;
+    
+}
+
+.footer {
+    background: #fff;    
+    color: #000;
+    justify-content: center;
+    padding: 3px 10px;
+    font-size: 12px;
+    position: fixed; 
+    bottom:0%;
+    width:100%; 
+    
+    
+}
+
